@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,700&display=swap" rel="stylesheet">
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+   
+    <header>
+        <h1>Cadastro Produto</h1>
+    </header>
+    
+    <main>
+        <div class="card">
+            <div class="lineInput"> 
+                <label>Código do Produto</label>
+                <input type="text" id="codigo" placeholder="Insira o código do produto...">
+            </div>
+
+            <div class="lineInput"> 
+                <label>Descrição do Produto</label>
+                <input type="text" id="descricao" placeholder="Insira a descrição do produto...">
+            </div>
+
+            <button onclick="produto.salvar()">Salvar</button>
+
+            <div class="content">
+                <table>
+                    <thead>
+                        <th>Código Produto</th>
+                        <th>Descrição Produto</th>
+                        <th></th>
+                    </thead>
+                    <tbody id="tbody">
+                    
+                    </tbody>
+                </table>
+        
+            </div>
+
+        </div>
+        
+
+
+    </main>
+
+</body>
+</html>
